@@ -11,9 +11,11 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ## Covid Report
-I write a paragraph here. I will highlight that the total number of US cases is `r get_total_cases()`. And, the total number of US deaths is `r get_total_deaths()`. 
+In the analysis file, we were able to examine a data set that included national data regarding covid cases and deaths on particular dates. I used the 'get_total_cases()' function to get the total number of cases and found that there was 97,654,808 total cases. I used the 'get_total_deaths()' function to get total deaths and found that there was 1,069,792 total deaths.
+
 
 (**Note**: Why are there no commas in the *total number of US deaths* ? Can you change `analysis.R` file so that the number is commented with commas?)
+The total number of US deaths originally did not have commas because the prettyNum() function was not origianlly included. After I used that function in the 'get_total_deaths' function, I got the output to include commas.
 
 I also want to show the chart:
 ``` {r echo=FALSE}
